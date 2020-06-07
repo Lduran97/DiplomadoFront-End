@@ -1,0 +1,36 @@
+
+.divUl{
+    border: 1px solid;
+    width: 250px;
+}
+.fondoSub{
+    background-color: #1a5e74;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 10px;
+    width: 232px;
+    height: 35px;
+    
+}
+
+.titulo{
+    background: #08ade5;
+    padding-top: 20px;
+    margin-top: -10px;
+    margin: -10px 0px -10px 0px;
+    color: white;
+    text-align: center;
+}
+
+a {text-decoration: none;}
+
+td input{
+    width: 200px;
+}
+
+td textarea{
+    width: 400px;
+    height: 100px;
+}
