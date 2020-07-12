@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #912F40;
+    font-family: Verdana;
+}
+
+h2 {
+    width: 100%;
+    padding: 10px 0 0 50px;
+    margin-bottom: 1vh;
+    height: 7vh;
+}
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px;
+    grid-template-areas:
+            "header"
+            "contenido"
+            ;
+
+    grid-gap: 10px;
+    height: 100vh;
+    /*padding: 0 15px;*/
+}
+
+.contenedor > * {background-color: #702632; padding: 10px;}
+.cabecera { background-color: #40434E; color:white; grid-area: header;}
+/*.cabecera .nombre{ background-color: #FFBA08; color: #222222; grid-area: header;}*/
+
+/*
+.menu {
+    grid-area: menu;
+}
+*/
+
+.contenido { grid-area: contenido; width: 50%; height: 50vh; margin: auto; position: relative;}
+
+
+.footer {
+    grid-area: footer;
+}
+
+/* Prueba*/
+
+.cabecera:after {
+    content: "";
+    display: block;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 70px;
+
+    left: calc(50% - 71px);
+
+    border-left: 71px solid transparent;
+    border-right: 71px solid transparent;
+    border-top: 64px solid #40434E;
+}
+
+.contenido:before {
+    content: "";
+    display: block;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 0px;
+
+    left: calc(50% - 51px);
+
+    border-left: 51px solid transparent;
+    border-right: 51px solid transparent;
+    border-top: 44px solid #912F40;
+}
+
+.contenido::after {
+    content: "";
+    display: block;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: 0px;
+
+    left: calc(50% - 51px);
+
+    border-left: 51px solid transparent;
+    border-right: 51px solid transparent;
+    border-bottom: 44px solid #912F40;
+}
+
+.vl {
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    height: 50%;
+    left: calc(50% - 6px);
+    position: absolute;
+    border-left: 6px solid#912F40;
+  }
+
+  .perfil{
+      position: relative;
+      float: left;
+      width: 50%;
+  }
+
+  .perfil img{
+
+    position: absolute;
+    left:30%;
+      width: 30%;
+      border-radius: 200px;
+      margin-top: 10vh;
+  }
+
+
+
+  .info{
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.text{
+  
+    left: 30%;
+    position: relative;
+    margin-top: 10vh;
+}
+
+
+

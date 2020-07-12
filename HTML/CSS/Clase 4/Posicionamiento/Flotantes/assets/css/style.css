@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #7A3B69;
+}
+
+body{
+    background-color: #D7DEDC;
+    font-family: Verdana;
+}
+
+h2{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    padding: 0 15px;
+}
+.contenedor > * {
+    background-color: #9A879D;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.cabecera{
+    background-color:#563440;
+    color: white;
+    min-height: 60px;
+    float: left;
+}
+
+.cabecera, .pie-pagina{
+    width: 100%;
+}
+
+.seccion, .barra-tarea{
+    width:32.5%;
+    min-height: 400px;
+    float: left;
+}
+.barra-tarea{
+    float: left;
+}
+
+.pie-pagina{
+    min-height: 60px;
+    float: left;
+}
+
